@@ -20,7 +20,7 @@ class JKAnimeProvider : MainAPI() {
         }
     }
 
-    override var mainUrl = "https://animefenix.tv/nino"
+    override var mainUrl = "https://animefenix.tv"
     override var name = "AnimeFenix"
     override var lang = "es"
     override val hasMainPage = true
@@ -218,13 +218,13 @@ class JKAnimeProvider : MainAPI() {
                         app.post(
                             "$mainUrl/gsplay/redirect_post.php",
                             headers = mapOf(
-                                "Host" to "animefenix.tv/nino",
+                                "Host" to "animefenix.tv",
                                 "User-Agent" to USER_AGENT,
                                 "Accept" to "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
                                 "Accept-Language" to "en-US,en;q=0.5",
                                 "Referer" to link,
                                 "Content-Type" to "application/x-www-form-urlencoded",
-                                "Origin" to "https://animefenix.tv/nino",
+                                "Origin" to "https://animefenix.tv",
                                 "DNT" to "1",
                                 "Connection" to "keep-alive",
                                 "Upgrade-Insecure-Requests" to "1",
@@ -242,13 +242,13 @@ class JKAnimeProvider : MainAPI() {
                             val nozomitext = app.post(
                                 "$mainUrl/gsplay/api.php",
                                 headers = mapOf(
-                                    "Host" to "animefenix.tv/nino",
+                                    "Host" to "animefenix.tv",
                                     "User-Agent" to USER_AGENT,
                                     "Accept" to "application/json, text/javascript, */*; q=0.01",
                                     "Accept-Language" to "en-US,en;q=0.5",
                                     "Content-Type" to "application/x-www-form-urlencoded; charset=UTF-8",
                                     "X-Requested-With" to "XMLHttpRequest",
-                                    "Origin" to "https://animefenix.tv/nino",
+                                    "Origin" to "https://animefenix.tv",
                                     "DNT" to "1",
                                     "Connection" to "keep-alive",
                                     "Sec-Fetch-Dest" to "empty",
